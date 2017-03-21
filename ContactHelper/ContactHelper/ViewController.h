@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "JHAddContacts.h"
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong)JHAddContacts *contact;
 
 @end
 

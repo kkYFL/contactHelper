@@ -15,6 +15,9 @@
 		3A6E58641E812C000009FED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6E58621E812C000009FED0 /* LaunchScreen.storyboard */; };
 		3A6E586F1E812C010009FED0 /* ContactHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6E586E1E812C010009FED0 /* ContactHelperTests.m */; };
 		3A6E587A1E812C010009FED0 /* ContactHelperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6E58791E812C010009FED0 /* ContactHelperUITests.m */; };
+		3A6E588C1E812D3C0009FED0 /* JHAddContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6E58891E812D3C0009FED0 /* JHAddContacts.m */; };
+		3A6E588D1E812D3C0009FED0 /* SJABHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6E588B1E812D3C0009FED0 /* SJABHelper.m */; };
+		3A6E588F1E812EA80009FED0 /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6E588E1E812EA80009FED0 /* Empty.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		3A6E58751E812C010009FED0 /* ContactHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6E58791E812C010009FED0 /* ContactHelperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactHelperUITests.m; sourceTree = "<group>"; };
 		3A6E587B1E812C010009FED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6E58881E812D3C0009FED0 /* JHAddContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAddContacts.h; sourceTree = "<group>"; };
+		3A6E58891E812D3C0009FED0 /* JHAddContacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAddContacts.m; sourceTree = "<group>"; };
+		3A6E588A1E812D3C0009FED0 /* SJABHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJABHelper.h; sourceTree = "<group>"; };
+		3A6E588B1E812D3C0009FED0 /* SJABHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJABHelper.m; sourceTree = "<group>"; };
+		3A6E588E1E812EA80009FED0 /* Empty.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Empty.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		3A6E58481E812C000009FED0 = {
 			isa = PBXGroup;
 			children = (
+				3A6E58871E812D0A0009FED0 /* contactHelperTool */,
 				3A6E58531E812C000009FED0 /* ContactHelper */,
 				3A6E586D1E812C010009FED0 /* ContactHelperTests */,
 				3A6E58781E812C010009FED0 /* ContactHelperUITests */,
@@ -110,6 +119,7 @@
 				3A6E58621E812C000009FED0 /* LaunchScreen.storyboard */,
 				3A6E58651E812C000009FED0 /* Info.plist */,
 				3A6E58541E812C000009FED0 /* Supporting Files */,
+				3A6E588E1E812EA80009FED0 /* Empty.xib */,
 			);
 			path = ContactHelper;
 			sourceTree = "<group>";
@@ -138,6 +148,17 @@
 				3A6E587B1E812C010009FED0 /* Info.plist */,
 			);
 			path = ContactHelperUITests;
+			sourceTree = "<group>";
+		};
+		3A6E58871E812D0A0009FED0 /* contactHelperTool */ = {
+			isa = PBXGroup;
+			children = (
+				3A6E58881E812D3C0009FED0 /* JHAddContacts.h */,
+				3A6E58891E812D3C0009FED0 /* JHAddContacts.m */,
+				3A6E588A1E812D3C0009FED0 /* SJABHelper.h */,
+				3A6E588B1E812D3C0009FED0 /* SJABHelper.m */,
+			);
+			path = contactHelperTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6E58641E812C000009FED0 /* LaunchScreen.storyboard in Resources */,
+				3A6E588F1E812EA80009FED0 /* Empty.xib in Resources */,
 				3A6E58611E812C000009FED0 /* Assets.xcassets in Resources */,
 				3A6E585F1E812C000009FED0 /* Main.storyboard in Resources */,
 			);
@@ -274,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6E588C1E812D3C0009FED0 /* JHAddContacts.m in Sources */,
 				3A6E585C1E812C000009FED0 /* ViewController.m in Sources */,
 				3A6E58591E812C000009FED0 /* AppDelegate.m in Sources */,
 				3A6E58561E812C000009FED0 /* main.m in Sources */,
+				3A6E588D1E812D3C0009FED0 /* SJABHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
